@@ -1,0 +1,15 @@
+.portfolio--bg-white {
+    background-color: $background-grey;
+    @media (min-width: 1200px) {
+        background-color: #fff;
+    }
+}
+
+.portfolio__title--center {
+    text-align: left;
+    @media (min-width: 1200px) {
+        text-align: center;
+    }
+}
+
+

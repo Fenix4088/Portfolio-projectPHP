@@ -1,0 +1,244 @@
+
+.portfolio {
+    padding: 60px 0 90px;
+    background-color: #f4f8f9;
+
+    @media (min-width: 768px) {
+        padding: 70px 0;
+    }
+    
+    @media (min-width: 1200px) {
+        padding: 120px 0 71px;
+    
+    }
+}
+
+.portfolio__title{
+    margin-bottom: 30px;
+    text-align: center;
+    @include title-big;
+
+    @media (min-width: 768px) {
+        margin-bottom: 40px;
+    }
+    
+    @media (min-width: 1200px) {
+        margin-bottom: 60px;
+        text-align: left;
+
+    }
+}
+
+.portfolio__toggles {
+    display: none;
+    cursor: pointer;
+    @media (min-width: 768px) {
+        margin-bottom: 48px;
+        display: flex;
+    }
+    
+}
+
+.portfolio__toggle {
+    color: rgb(143, 165, 174);
+    font-weight: bold;
+    transition: all .2s ease-in;
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &:hover {
+            color: #000;
+        }
+
+    @media (min-width: 768px) {
+        margin-right: 24px;
+        font-size: 24px;
+    }
+    
+    @media (min-width: 1200px) {
+        margin-right: 80px;
+        font-size: 28px;
+    }
+}
+
+.portfolio__toggle--active {
+    color: #000;
+    font-weight: 900;
+}
+  
+.portfolio__projects-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: unset;
+        
+    }
+
+    @media (min-width: 1200px) {
+        justify-content: space-between;
+    
+    }
+    
+}
+
+.portfolio__card {
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 290px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 50px;
+        width: 48.68%;
+        max-width: 338px;
+
+    }
+    
+    @media (min-width: 1200px) {
+        margin-bottom: 60px;
+        max-width: 360px;
+        width: 31.57%;
+    }
+}
+
+.portfolio__card--big {
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: 48.68%;
+    }
+    
+    @media (min-width: 1200px) {
+        max-width: 555px;
+        width: 48.68%;
+    }
+}
+
+
+.portfolio__project-img {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(251, 220, 77, .8);
+            cursor: pointer;
+            transition: all .2s ease-in;
+            z-index: 10;
+        }
+        &:hover::after {
+            top: 0;
+        }
+
+        &:hover .portfolio__project-btn {
+            left: 50%;
+        }
+}
+
+.portfolio__project-btn {
+    padding: 12px 50px;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+        bottom: 50%;
+        left: -50%;
+    border-radius: 30px;
+    color: #ea736d;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%, 50%);
+    transition: all .2s ease-in;
+    z-index: 11;
+        &:hover {
+            background-color: $red-main;
+            color: rgba(255, 255, 255, .8);
+        }
+
+        &:active {
+            background-color: #d4423b;
+            color: #fff;
+        }
+}
+
+.portfolio__project-btn--big {
+    padding: 12px 80px;
+}
+
+
+.portfolio__project-title {
+    margin-bottom: 7px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    transition: all .1s ease-in;
+    &:hover {
+        color: $red-main;
+        text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 24px;
+    }
+    
+    @media (min-width: 1200px) {
+        font-size: 32px;
+    }
+}
+
+.portfolio__project-title--small {
+    margin-bottom: 7px;
+    font-size: 22px;
+    color: #000;
+    @media (min-width: 768px) {
+        font-size: 24px;
+    
+    }
+    
+    @media (min-width: 1200px) {
+        font-size: 26px;
+    }
+}
+
+.portfolio__project-description {
+    font-size: 16px;
+    font-weight: 300;
+    @media (min-width: 768px) {
+        font-size: 18px;
+    }
+    
+    @media (min-width: 1200px) {
+        font-size: 22px;
+    }
+
+}
+
+.portfolio__project-description--small {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.portfolio__toggles-link {
+    display: inline-block;
+    a {
+        font-size: 20px;
+        text-decoration: underline;
+        color: rgb(3, 155, 229);
+        text-shadow: 0px 3px 42.32px rgba(255, 255, 255, 0.4);
+        line-height: 1.5;
+    }
+
+    @media (min-width: 1200px) {
+        display: none;
+    }
+}
+

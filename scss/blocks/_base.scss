@@ -1,0 +1,402 @@
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+    border: 2px dotted $red-main;
+}
+
+*::selection {
+    background-color: $yellow-main;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;;
+    font-weight: 500;
+    color: #000;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button, input {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+// /COMMON STYLES
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    min-width: 290px;
+
+    @media (min-width: 768px) {
+        padding: 0 20px;
+        min-width: 708px;
+    }
+    
+    @media (min-width: 1200px) {
+        padding: 0;
+        max-width: 1140px;
+    }
+}
+
+.sub-container {
+    margin: 0 auto;
+    max-width: 1005px;
+}
+
+.none {
+    display: none;
+}
+
+.header-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media (min-width: 768px) {
+
+    }
+
+    @media (min-width: 1200px) {
+        padding-bottom: 0;
+        padding-top: 60px;
+
+    }
+}
+
+.mobile-email a {
+    font-size: 20px;
+    color: rgb(3, 155, 229);
+    transition: all .2s ease-in;
+    &:hover {
+        color: rgb(22, 92, 128);
+    }
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+// YELLOW LINES UNDER TITELS 
+.title-line-small {
+    position: relative;
+    z-index: 1;
+        &::before {
+            bottom: 5px;
+            right: -5px;
+            left: -5px;
+            height: 6px;
+            @include yellow-subline;
+        }
+}
+
+.title-line {
+    position: relative;
+    z-index: 1;
+        &::before {
+            bottom: 8px;
+            right: -5px;
+            left: -5px;
+            height: 10px;
+            @include yellow-subline;
+        }
+}
+
+.title-line-middle {
+    position: relative;
+    z-index: 1;
+        &::before {
+            bottom: 6px;
+            right: -5px;
+            left: -5px;
+            height: 12px;
+            @include yellow-subline;
+
+            @media (min-width: 768px) {
+                bottom: 10px;
+            }
+            
+            @media (min-width: 1200px) {
+                bottom: 16px;
+            
+            }
+        }
+}
+
+.title-line-big {
+    position: relative;
+    z-index: 1;
+        &::before {
+            bottom: 9px;
+            right: -5px;
+            left: -5px;
+            height: 12px;
+            @include yellow-subline;
+
+            @media (min-width: 768px) {
+    
+            }
+            
+            @media (min-width: 1200px) {
+                bottom: 25px;
+            
+            }
+        }
+
+        
+}
+// /YELLOW LINES UNDER TITELS 
+
+.active-page {
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 120%;
+        height: 5px;
+        left: -5px;
+        background-color: $yellow-main;
+    }
+}
+
+.mix {
+    display: none;
+}
+
+// Page navigation
+#page-nav {
+    display: none;
+    @media (min-width: 1200px) {
+        display: block;
+        position: fixed;
+        right: 50px;
+        top: 50%;
+        z-index: 100;
+    }
+}
+
+#page-nav li {
+    width: 12px;
+    height: 12px;
+    background-color: $yellow-main;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    transition: all .2s ease-in;
+}
+
+#page-nav li a {
+    display: block;
+    outline: none;
+
+    height: 100%;
+}
+
+#page-nav li.active {
+    background-color: $blue-main;
+}
+
+// /Page navigation
+
+// HOVERS FOR HEADER ICONS
+.intouch-block {
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    a {
+        @media (min-width: 768px) {
+            margin-right: 18px;
+        }
+
+    }
+
+    @media (min-width: 768px) {
+        justify-content: unset;
+    }
+    
+}
+
+.fa-linkedin-in {
+    transition: all .2s ease-in;
+    &:hover {
+        color: #0077b5;
+    }
+}
+
+.fa-github {
+    color: #000;
+    transition: all .2s ease-in;
+    &:hover {
+        color: #6cc644;
+    }
+}
+
+.fa-telegram {
+    color: #039be5;
+    transition: all .2s ease-in;
+        &:hover {
+            color: #4d76a1;
+        }
+}
+
+.fa-facebook-f {
+    transition: all .2s ease-in;
+    &:hover {
+        color: #45668e;
+    }
+}
+
+.fa-vk {
+    color: #fff;
+}
+
+.fa-vk--modify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #4d76a1;
+    transition: all .2s ease-in;
+        &:hover {
+            background-color: #6992e9;
+        }
+
+}
+
+.fa-facebook {
+    transition: all .2s ease-in;
+    color: #3b5998;
+        &:hover {
+            color: #039be5;
+        }
+}
+// /HOVERS FOR HEADER ICONS
+
+// BUTTONS 
+.color-btn {
+    @include color-btn;
+}
+
+.colorless-btn {
+    margin-left: 20px;
+    @include colorless-btn;
+}
+
+// /BUTTONS 
+
+// NO SCROLL
+.noscroll {
+    overflow: hidden;
+} 
+// /NO SCROLL 
+  
+// OVERLAY WHEN MOBILE MENUE IS OPEN 
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 18;
+}
+
+.overlay.active {
+    display: block;
+    backdrop-filter: blur(5px);
+}
+// /OVERLAY WHEN MOBILE MENUE IS OPEN 
+
+// Fixesed navigation on top
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(5px);
+    z-index: 100;
+
+    @media (min-width: 1440px) {
+        padding: 0;
+    }
+}
+
+.nav-fixed .header__navigation-block > .header__navigation-list{
+    background-color: transparent;
+    z-index: 101;
+}
+//  /Fixesed navigation on top
+
+// Error message in a form 
+
+.error {
+    position: absolute;
+    left: 0;
+    bottom: -42px;
+    margin-bottom: 5px;
+    padding: 14px;
+    font-size: 16px;
+    color: rgba(224, 79, 54, 0.712);
+    font-weight: 700;
+}
+
+
+// Thank you message 
+.title-success {
+    margin-bottom: 200px;
+    font-size: 30px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        font-size: 60px;
+
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 80px;
+    }
+}

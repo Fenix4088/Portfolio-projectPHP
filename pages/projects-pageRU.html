@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,300i,400,400i,600,600i,700,700i,900&display=swap&subset=latin-ext" rel="stylesheet">
+        <!-- FONT AWESOME ICONS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <!-- STYLES -->
+        <link rel="stylesheet" href="../css/main.css">
+        <!-- FAVICON  -->
+        <link rel="shortcut icon" href="../img/backgrounds/favicon.png" type="image/x-icon">
+        <!-- ANIMATE CSS  -->
+        <link rel="stylesheet" href="../libs/animateCSS/animate.min.css">
+        
+        <title>Portfolio project | Projects RU</title>
+    </head>
+    <body>
+
+        <!-- OVERLAY WHEN MOBILE MENUE IS ACTIVE  -->
+        <div class="overlay"></div>
+        <!-- /OVERLAY WHEN MOBILE MENUE IS ACTIVE  -->
+
+        <header class="header-padding">
+            <div class="fixed-wrapper">
+                <nav class="header__navigation">
+    
+                    <div class="header__navigation-logo">
+                        <span class="title-line">
+                            <a href="../indexRU.php">YP</a>
+                        </span>
+                    </div>
+                    <!-- MOBILE MENUE  -->
+                    <div class="header__burger-wrap">
+                        <label class="header__burger-label">
+                            <input type="checkbox" class="header__burger-checkbox">
+                            <span class="header__burger"></span>
+                        </label>
+                    </div>
+                <!-- //MOBILE MENUE  -->
+    
+                <div class="header__navigation-block">
+                    <ul class="header__navigation-list">
+                        <li class="header__navigation-list-item">
+                            <a href="../indexRU.php">Главная</a>
+                        </li>
+                        <li class="header__navigation-list-item">
+                            <a href="#" class="active-page">Работы</a>
+                        </li>
+                        <li class="header__navigation-list-item">
+                            <a href="./contacts-pageRU.html">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <div class="intouch-block intouch-block--mobile">
+                        <a href="https://github.com/Fenix4088?tab=repositories" target="_blank">
+                            <i class="fab fa-github fa-3x"></i>
+                        </a>
+    
+                        <a href="#">
+                            <i class="fab fa-telegram fa-3x"></i>
+                        </a>
+    
+                        <a href="https://vk.com/id13266823" target="_blank">
+                            <i class="fab fa-vk fa-vk--modify"></i>
+                        </a>
+    
+                        <a href="https://www.facebook.com/profile.php?id=100013553615468" target="_blank">
+                            <i class="fab fa-facebook fa-3x"></i>
+                        </a>
+                    </div>
+
+                    <div class="header__navigation-language header__navigation-language--mobile">
+                        <a href="../pages/projects-pageRU.html">
+                            <img src="../img/header/ru.png" alt="Russian flag">
+                        </a>
+                        <a href="../pages/projects-page.html">
+                            <img src="../img/header/uk.png" alt="England flag">
+                        </a>
+                    </div>
+    
+                    <div class="header__naviation-email mobile-email">
+                        <a href="mailto:fenix4088@gmail.com">fenix4088@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="header__navigation-language">
+                    <a href="../pages/projects-pageRU.html">
+                        <img src="../img/header/ru.png" alt="Russian flag">
+                    </a>
+                    <a href="../pages/projects-page.html">
+                        <img src="../img/header/uk.png" alt="England flag">
+                    </a>
+                </div>
+    
+                    <div class="header__navigation-icons">
+                        <div class="header__navigation-icon linkedin-icon">
+                            <a href="https://www.linkedin.com/in/yehor-pliasov-5776981a2/" target="_blank">
+                                <i class="fab fa-linkedin-in fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="header__navigation-icon git-icon">
+                            <a href="https://github.com/Fenix4088?tab=repositories" target="_blank">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="header__navigation-icon facebook-icon">
+                            <a href="https://www.facebook.com/profile.php?id=100013553615468&ref=bookmarks" target="_blank">
+                                <i class="fab fa-facebook-f fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <section class="portfolio portfolio--bg-white">
+
+                <div class="container">
+                    <h2 class="portfolio__title  contacts__title wow animated pulse infinite">
+                        <span class="title-line-middle">Портфолио</span>
+                    </h2>
+    
+                    <div class="portfolio__toggles">
+                        <div class="portfolio__toggle portfolio__toggle--active filter" data-filter="all">Все работы</div>
+                        <!-- <div class="portfolio__toggle filter" data-filter=".boot">Bootstrap</div> -->
+                        <!-- <div class="portfolio__toggle filter" data-filter=".wp">WordPress</div> -->
+                        <!-- <div class="portfolio__toggle filter" data-filter=".front">Frontend</div> -->
+                    </div>
+    
+                    <div class="portfolio__projects-wrapper" id="portfolio-project-filter">
+                        <!-- <div class="portfolio__card portfolio__card--big mix front boot">
+                            <div class="portfolio__project-img">
+                                <img src="../img/portfolio/forest-travel-wallpaper.jpg" alt="forest travel photo">
+                                <a href="#" class="portfolio__project-btn portfolio__project-btn--big">View</a>
+                            </div>
+                            <div class="portfolio__project-desk">
+                                <div class="portfolio__project-title-wrapper">
+                                    <a href="#" class="portfolio__project-title">Project "Forest travel"</a>
+                                    <div class="portfolio__project-description">Multi-page project</div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="portfolio__card portfolio__card--big mix front boot">
+                            <div class="portfolio__project-img">
+                                <img src="../img/portfolio/dream-wallpaper.jpg" alt="dream psd photo">
+                                <a href="#" class="portfolio__project-btn portfolio__project-btn--big">View</a>
+                            </div>
+                            <div class="portfolio__project-desk">
+                                <div class="portfolio__project-title-wrapper">
+                                    <a href="#" class="portfolio__project-title">Project "Dream"</a>
+                                    <div class="portfolio__project-description">Multi-page project</div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="portfolio__card mix boot">
+                            <div class="portfolio__project-img">
+                                <img src="../img/projects-screenshots/unit-project-small.jpg" alt="Unit">
+                                <a href="./unit-projectRU.html" class="portfolio__project-btn">Смотреть</a>
+                            </div>
+                            <div class="portfolio__project-desk">
+                                <div class="portfolio__project-title-wrapper">
+                                    <a href="./unit-projectRU.html" class="portfolio__project-title portfolio__project-title--small">Проект "Unit"</a>
+                                    <div class="portfolio__project-description portfolio__project-description--small">Landing-page project</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__card mix wp">
+                            <div class="portfolio__project-img">
+                                <img src="../img/projects-screenshots/StayAndSki-progect-small.jpg" alt="Stay and Ski">
+                                <a href="../pages/stay-and-ski-projectRU.html" class="portfolio__project-btn">Смотреть</a>
+                            </div>
+                            <div class="portfolio__project-desk">
+                                <div class="portfolio__project-title-wrapper">
+                                    <a href="./stay-and-ski-projectRU.html" class="portfolio__project-title portfolio__project-title--small">Проект "Stay and Ski"</a>
+                                    <div class="portfolio__project-description portfolio__project-description--small">Landing-page project</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="portfolio__card mix boot">
+                            <div class="portfolio__project-img">
+                                <img src="../img/portfolio/wallpaper-3.jpg" alt="">
+                                <a href="#" class="portfolio__project-btn">View</a>
+                            </div>
+                            <div class="portfolio__project-desk">
+                                <div class="portfolio__project-title-wrapper">
+                                    <a href="#" class="portfolio__project-title portfolio__project-title--small">Project "World of cars"</a>
+                                    <div class="portfolio__project-description portfolio__project-description--small">Landing-page project</div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="portfolio__card mix front">
+                            <div class="portfolio__project-img">
+                                <img src="../img/portfolio/wallpaper-1.jpg" alt="">
+                                <a href="#" class="portfolio__project-btn">View</a>
+                            </div>
+                            <div class="portfolio__project-desk">
+                                <div class="portfolio__project-title-wrapper">
+                                    <a href="#" class="portfolio__project-title portfolio__project-title--small">Project "World of cars"</a>
+                                    <div class="portfolio__project-description portfolio__project-description--small">Landing-page project</div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="portfolio__card mix boot">
+                            <div class="portfolio__project-img">
+                                <img src="../img/portfolio/wallpaper-2.jpg" alt="">
+                                <a href="#" class="portfolio__project-btn">View</a>
+                            </div>
+                            <div class="portfolio__project-desk">
+                                <div class="portfolio__project-title-wrapper">
+                                    <a href="#" class="portfolio__project-title portfolio__project-title--small">Project "World of cars"</a>
+                                    <div class="portfolio__project-description portfolio__project-description--small">Landing-page project</div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="portfolio__card mix boot">
+                            <div class="portfolio__project-img">
+                                <img src="../img/portfolio/wallpaper-3.jpg" alt="">
+                                <a href="#" class="portfolio__project-btn">View</a>
+                            </div>
+                            <div class="portfolio__project-desk">
+                                <div class="portfolio__project-title-wrapper">
+                                    <a href="#" class="portfolio__project-title portfolio__project-title--small">Project "World of cars"</a>
+                                    <div class="portfolio__project-description portfolio__project-description--small">Landing-page project</div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="portfolio__card mix front">
+                            <div class="portfolio__project-img">
+                                <img src="../img/portfolio/wallpaper-1.jpg" alt="">
+                                <a href="#" class="portfolio__project-btn">View</a>
+                            </div>
+                            <div class="portfolio__project-desk">
+                                <div class="portfolio__project-title-wrapper">
+                                    <a href="#" class="portfolio__project-title portfolio__project-title--small">Project "World of cars"</a>
+                                    <div class="portfolio__project-description portfolio__project-description--small">Landing-page project</div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="portfolio__card mix front">
+                            <div class="portfolio__project-img">
+                                <img src="../img/portfolio/wallpaper-2.jpg" alt="">
+                                <a href="#" class="portfolio__project-btn">View</a>
+                            </div>
+                            <div class="portfolio__project-desk">
+                                <div class="portfolio__project-title-wrapper">
+                                    <a href="#" class="portfolio__project-title portfolio__project-title--small">Project "World of cars"</a>
+                                    <div class="portfolio__project-description portfolio__project-description--small">Landing-page project</div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="portfolio__card mix front">
+                            <div class="portfolio__project-img">
+                                <img src="../img/portfolio/wallpaper-3.jpg" alt="">
+                                <a href="#" class="portfolio__project-btn">View</a>
+                            </div>
+                            <div class="portfolio__project-desk">
+                                <div class="portfolio__project-title-wrapper">
+                                    <a href="#" class="portfolio__project-title portfolio__project-title--small">Project "World of cars"</a>
+                                    <div class="portfolio__project-description portfolio__project-description--small">Landing-page project</div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="contacts-data">
+                <div class="container">
+                    <div class="contacts-data__wrapper">
+                        <div class="contacts-data__title">За созданием сайта:</div>
+                        <div class="contacts-data__link">Обращайтесь на
+                            <a href="mailto:fenix4088@gmail.com">fenix4088@gmail.com</a>
+                        </div>
+                        <div class="intouch-block">
+                            <a href="https://github.com/Fenix4088?tab=repositories" target="_blank">
+                                <i class="fab fa-github fa-3x"></i>
+                            </a>
+        
+                            <a href="#">
+                                <i class="fab fa-telegram fa-3x"></i>
+                            </a>
+        
+                            <a href="https://vk.com/id13266823" target="_blank">
+                                <i class="fab fa-vk fa-vk--modify"></i>
+                            </a>
+        
+                            <a href="https://www.facebook.com/profile.php?id=100013553615468" target="_blank">
+                                <i class="fab fa-facebook fa-3x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts-data__img">
+                    <img src="../img/backgrounds/projects-page-bg.png" alt="Mountains">
+                </div>
+            </section>
+        </main>
+
+        <!-- public script  -->
+        <script src="../libs/JQuery/jquery-3.4.1.min.js"></script>
+        <script src="../libs/mixitup2/jquery.mixitup.min.js"></script>
+        <script src="../libs/nav.js/nav.js"></script>
+        <script src="../libs/WOW/wow.min.js"></script>
+        <!-- user scripts  --> 
+        <script src="../js/main.js"></script>
+    </body>
