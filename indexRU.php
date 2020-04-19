@@ -277,7 +277,7 @@
             <section class="portfolio" id="portfolio">
 
                 <div class="container">
-                    <h2 class="portfolio__title  wow animated pulse infinite">
+                    <h2 class="portfolio__title">
                         <span class="title-line-middle">Портфолио</span>
                     </h2>
     
@@ -361,7 +361,7 @@
             <section class="how-it-works" id="how-it-work">
                 <div class="container">
                     <div class="sub-container">
-                        <h2 class="how-it-works__title wow animated pulse infinite">
+                        <h2 class="how-it-works__title">
                             <span class="title-line-middle">Как я работаю</span>
                         </h2>
                         <div class="how-it-works__timeline">
@@ -440,7 +440,7 @@
 
             <section class="contacts" id="contacts">
                 <div class="container">
-                    <h2 class="contacts__title wow animated pulse infinite">
+                    <h2 class="contacts__title">
                         <span class="title-line-middle ">Контакты</span>
                     </h2>
                     <div class="contacts__wrapper">

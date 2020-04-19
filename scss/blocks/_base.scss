@@ -8,8 +8,7 @@
 }
 
 *:focus {
-    outline: none;
-    border: 2px dotted $red-main;
+    outline: 2px dotted $red-main;
 }
 
 *::selection {
