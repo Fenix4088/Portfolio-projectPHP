@@ -283,37 +283,14 @@
     
                     <div class="portfolio__toggles">
                         <div class="portfolio__toggle portfolio__toggle--active filter" data-filter="all">All projects</div>
-                        <!-- <div class="portfolio__toggle filter" data-filter=".boot">Bootstrap</div> -->
+                        <div class="portfolio__toggle filter" data-filter=".boot">Bootstrap</div>
                         <!-- <div class="portfolio__toggle filter" data-filter=".wp">WordPress</div> -->
-                        <!-- <div class="portfolio__toggle filter" data-filter=".front">Frontend</div> -->
+                        <div class="portfolio__toggle filter" data-filter=".front">Frontend</div>
                     </div>
     
                     <div class="portfolio__projects-wrapper" id="portfolio-project-filter">
-                        <!-- <div class="portfolio__card portfolio__card--big mix front boot">
-                            <div class="portfolio__project-img">
-                                <img src="./img/portfolio/forest-travel-wallpaper.jpg" alt="forest travel photo">
-                                <a href="#" class="portfolio__project-btn portfolio__project-btn--big">View</a>
-                            </div>
-                            <div class="portfolio__project-desk">
-                                <div class="portfolio__project-title-wrapper">
-                                    <a href="#" class="portfolio__project-title">Project "Forest travel"</a>
-                                    <div class="portfolio__project-description">Multi-page project</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio__card portfolio__card--big mix front boot">
-                            <div class="portfolio__project-img">
-                                <img src="./img/portfolio/dream-wallpaper.jpg" alt="dream psd photo">
-                                <a href="#" class="portfolio__project-btn portfolio__project-btn--big">View</a>
-                            </div>
-                            <div class="portfolio__project-desk">
-                                <div class="portfolio__project-title-wrapper">
-                                    <a href="#" class="portfolio__project-title">Project "Dream"</a>
-                                    <div class="portfolio__project-description">Multi-page project</div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="portfolio__card mix boot">
+
+                        <div class="portfolio__card mix">
                             <div class="portfolio__project-img">
                                 <img src="./img/projects-screenshots/unit-project-small.jpg" alt="Unit">
                                 <a href="./pages/unit-project.html" class="portfolio__project-btn">View</a>
@@ -325,30 +302,67 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio__card mix wp">
+                        <div class="portfolio__card mix">
                             <div class="portfolio__project-img">
                                 <img src="./img/projects-screenshots/StayAndSki-progect-small.jpg" alt="Stay and Ski">
                                 <a href="./pages/stay-and-ski-project.html" class="portfolio__project-btn">View</a>
                             </div>
                             <div class="portfolio__project-desk">
-                                <div class="portfolio__project-title-wrapper">
-                                    <a href="#" class="portfolio__project-title portfolio__project-title--small">Project "Stay and Ski"</a>
+                               <div class="portfolio__project-title-wrapper">
+                                    <a href="./pages/stay-and-ski-project.html" class="portfolio__project-title portfolio__project-title--small">Project "Stay and Ski"</a>
                                     <div class="portfolio__project-description portfolio__project-description--small">Landing-page project</div>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="portfolio__card mix front">
+                        <div class="portfolio__card mix front boot">
                             <div class="portfolio__project-img">
-                                <img src="./img/portfolio/wallpaper-3.jpg" alt="">
-                                <a href="#" class="portfolio__project-btn">View</a>
+                                <img src="./img/projects-screenshots/todo-project-small.jpg" alt="">
+                                <a href="./pages/toDo-application.html" class="portfolio__project-btn">View</a>
                             </div>
                             <div class="portfolio__project-desk">
                                 <div class="portfolio__project-title-wrapper">
-                                    <a href="#" class="portfolio__project-title portfolio__project-title--small">Project "World of cars"</a>
-                                    <div class="portfolio__project-description portfolio__project-description--small">Landing-page project</div>
+                                    <a href="./pages/toDo-application.html" class="portfolio__project-title portfolio__project-title--small">Project "To Do Appliction"</a>
+                                    <div class="portfolio__project-description portfolio__project-description--small">Frontend application</div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+                        <div class="portfolio__card mix front boot">
+                            <div class="portfolio__project-img">
+                                <img src="./img/projects-screenshots/crm-project-small.jpg" alt="crm-project-small">
+                                <a href="./pages/crm-system.html" class="portfolio__project-btn">View</a>
+                            </div>
+                            <div class="portfolio__project-desk">
+                                <div class="portfolio__project-title-wrapper">
+                                    <a href="./pages/crm-system.html" class="portfolio__project-title portfolio__project-title--small">Project "CRM System"</a>
+                                    <div class="portfolio__project-description portfolio__project-description--small">Frontend application</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__card mix front boot">
+                            <div class="portfolio__project-img">
+                                <img src="./img/projects-screenshots/square-project-small.jpg" alt="">
+                                <a href="./pages/square-meter-project.html" class="portfolio__project-btn">View</a>
+                            </div>
+                            <div class="portfolio__project-desk">
+                                <div class="portfolio__project-title-wrapper">
+                                    <a href="./pages/square-meter-project.html" class="portfolio__project-title portfolio__project-title--small">Square meter project</a>
+                                    <div class="portfolio__project-description portfolio__project-description--small">Frontend application</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__card mix front boot">
+                            <div class="portfolio__project-img">
+                                <img src="./img/projects-screenshots/budget-calculator-small.jpg" alt="">
+                                <a href="./pages/budget-calc.html" class="portfolio__project-btn">View</a>
+                            </div>
+                            <div class="portfolio__project-desk">
+                                <div class="portfolio__project-title-wrapper">
+                                    <a href="./pages/budget-calc.html" class="portfolio__project-title portfolio__project-title--small">Project "Budget Calculator"</a>
+                                    <div class="portfolio__project-description portfolio__project-description--small">Frontend application</div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                     <div class="portfolio__toggles-link">
